@@ -1,0 +1,633 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="/home/athlet/Desktop/foundation/Foundation-Sites-CSS/css/foundation.css">
+    <link rel="stylesheet" href="/home/athlet/Desktop/foundation/Foundation-Sites-CSS/css/app.css">
+  </head>
+<body>
+  <!-- Сообщение об ошибки/Валидация-->
+      <form data-abide novalidate>
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <div data-abide-error class="allert callout" style="display: none;">
+              <p><i class="fi-alert">There are some errors in your form.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Number Validate-->
+      <div class="grid-x grid-margin-x">
+          <div class="cell small-12">
+          <label>Number Required
+          <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+          <span class="form-error">
+          Чувак, ты что не так делаешь!
+          </span>
+         </label>
+         <p class="help-text" id="exampleHelpText">Here is how you fill it out.</p>
+    </div>
+    </div>
+    <!-- Password validate-->
+          <div class="cell small-12">
+          <label>Password Required
+          <input type="password" id="password" placeholder="sdio389" aria-describedby="exampleHelpText" required>
+          <span class="form-error">
+          I'm Required!
+          </span>
+          <p class="help-text" id="exampleHelpText">Введите пароль, пожайлуста</p>
+          </label>
+          </div>
+      </form>
+      <!-- Меню Аккордион-->
+<ul class="accordian" data-accordian>
+  <li class="accordian-item is-active" data-accordian-item>
+  <a href="#" class="accordian-title">Accordian 1 </a>
+  <div class="accordian-content" data-tab-contetnt>
+  <p>Hello World</p>
+  <a href="#">Link</a>
+  </div>
+</li>
+</ul>
+
+<ul class="accordian" data-accordian>
+  <li class="accordian-item is-active" data-accordian-item>
+  <a href="#" class="accordian-title">Accordian 1 </a>
+  <div class="accordian-content" data-tab-contetnt>
+  <p>Panel 1.Lorem Ipsum</p>
+  <a href="#">Nowhere to Go</a>
+  </div>
+</li>
+</ul>
+<div style="margin-bottom: 100px;">
+</div>
+
+  <!-- My example code insert in site-->
+
+<ul class="vertical menu accordion-menu" data-accordion-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu vertical nested">
+      <li><a href="#">Item 1A</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Item 2</a></li>
+</ul>
+
+
+<div style="margin-bottom: 100px;">
+</div>
+
+  <!-- Badges (Значки)-->
+<span class="primary badge">A</span>
+<span class="secondary badge">B</span>
+<span class="warning badge">C</span>
+<span class="alert badge">D</span>
+<span class="success badge">E</span>
+
+
+<!-- Button's (Кнопоки)-->
+<div style="margin-bottom: 100px;">
+</div>
+<button class="button" type="button">Button</button>
+<button class="success button" type="button">Button2</button>
+<button class="alert button" type="button">Button3</button>
+<button class="warning button" type="button">Button4</button>
+<button class="tiny button" type="button">Tiny botton</button>
+<button class="small button" type="button">Small botton</button>
+<button class="large button" type="button">Big Button</button>
+<button class="expended button" type="button">Expand Button</button>
+
+<!-- Callout (Всплывающие сообщения)-->
+    <div class="callout">
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br><br>
+
+    <div class="callout warning">
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br>
+
+    <div class="callout success">
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br>
+
+    <div class="callout alert">
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br></hr>
+
+    <div class="callout primamy">
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br>
+    <div class="callout secondary">
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br>
+    <div class="callout" data-closeable>
+      <button class="close-button" type="button" aria-label="Close alert" data-close>
+      <span aria-hidden="true">&times;</span>
+      </button>
+      <h5>Hello World</h5>
+      <p>This is a callout</p>
+      <a href="#">Link</a>
+    </div><br><br>
+
+      <!-- Dropdown menu (Раскрывабщийся список)-->
+      <ul class="dropdown menu" data-dropdown-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu">
+    <li><a href="#">Item 1A</a></li>
+</ul>
+</li>
+</ul><br><br>
+
+<ul class="vertical dropdown menu" data-dropdown-menu style="max-width: 250px;">
+<li><a href="#">Item 2</a>
+  <ul class="vertical menu nested">
+  <li><a href="#">Item 1A</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 3</a></li>
+</ul><br><br><br><br><br><br>
+<div style="margin-bottom: 20px;">
+<!-- Dropdown Pane (Раскрывабщийся список)-->
+<div style="display: flex; justify-content: center; text-align: center; margin: 15px;">
+<button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
+<div class="dropdown-pane" id="example-dropdown" data-dropdown>
+  Dropdown Pane
+</div>
+</div><br><br>
+<!-- Float button-->
+<div class="callout clearfix">
+  <a class="alert button float-left">Left</a>
+  <a class="success button float-right">Right</a>
+</div></hr>
+<button class="button float-left" type="button">Left</button><br><br>
+<button class="button float-rigth" type="button">Right</button><hr><br>
+<!-- Labels Метки-->
+<span class="primary label">Primary Label</span>
+<span class="secondary label">Secondary Label</span>
+<span class="alert label">Alert Label</span>
+<span class="warning label">Warning Label</span>
+<span class="success label">Success Label</span>
+<div style="margin-bottom: 100px;"></div>
+
+  <!-- Off Canvas -->
+    <div class="off-canvas-wrapper">
+    <div class="off-canvas-inner" data-off-canvas-wrapper>
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      <h2>11</h2>
+      <h2>HTML</h2>
+      <h2>CSS</h2>
+      <a href="#"><h2>JS</h2></a>
+      </div>
+        </div>
+          </div>
+  <!-- Off Canvas -->
+    <button class="button" data-toggle="offCanvasLeft" type="button">Off Canvas</button><br><br>
+  <!-- Pagination Bar-->
+  <nav aria-label="Pagination">
+  <ul class="pagination">
+    <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis" aria-hidden="true"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+  </ul>
+</nav><hr>
+
+  <ul style="display: flex; justify-content: center; "class="pagination" role="navigation" aria-label="Pagination">
+  <li class="disabled">Previous <span class="show-for-sr">page</span></li>
+  <li class="current"><span class="show-for-sr">Your are on page</span></li>
+  <li><a href="#" aria-label="Page 2">2</a></li>
+  <li><a href="#" aria-label="Page 3">3</a></li>
+  <li><a href="#" aria-label="Page 4">4</a></li>
+  <li class="ellipsis" aria-hidden="true"></li>
+  <li><a href="#" aria-label="Page 12">12</a></li>
+  <li><a href="#" aria-label="Page 13">13</a></li>
+  <li ><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+</ul><br><br><br><br>
+<!--Progress Bar-->
+<h2>Progress Bar Basic</h2>
+<div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+  <div class="progress-meter" style="width: 50%"></div>
+</div><hr>
+<h2>Progress Bar Color</h2>
+<div class="secondary progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+  <div class="progress-meter" style="width: 25%"></div>
+</div>
+
+<div class="success progress">
+  <div class="progress-meter" style="width: 50%"></div>
+</div>
+
+<div class="warning progress">
+  <div class="progress-meter" style="width: 50%"></div>
+</div>
+
+<div class="alert progress">
+  <div class="progress-meter" style="width: 75%"></div>
+</div><hr>
+<h2>Progress Bar with text</h2>
+<div class="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+  <span class="progress-meter" style="width: 25%">
+    <span class="progress-meter-text">25%</span>
+  </span>
+</div><hr>
+<h1>Native Progress</h1>
+<progress max="100" value="75"></progress><hr>
+<h2>Native Meter</h2>
+<meter value="30" min="0" low="33" high="66" optimum="100" max="100"></meter>
+<meter value="50" min="0" low="33" high="66" optimum="100" max="100"></meter>
+<meter value="100" min="0" low="33" high="66" optimum="100" max="100"></meter><hr><br><br>
+<!--Switch Переключатель-->
+<h2>Basics</h2>
+<div class="switch">
+  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="exampleSwitch">
+    <span class="show-for-sr">Download Kittens</span>
+  </label>
+</div><br>
+<h2>Disabled</h2>
+<div class="switch">
+  <input class="switch-input" disabled checked="checked" id="exampleCheckedDisabledSwitch" type="checkbox" name="exampleCheckedDisabledSwitch">
+  <label class="switch-paddle" for="exampleCheckedDisabledSwitch">
+    <span class="show-for-sr">Can't Touch This Checked</span>
+  </label>
+</div>
+
+<div class="switch">
+  <input class="switch-input" disabled id="exampleUncheckedDisabledSwitch" type="checkbox" name="exampleUncheckedDisabledSwitch">
+  <label class="switch-paddle" for="exampleUncheckedDisabledSwitch">
+    <span class="show-for-sr">Can't Touch This Unchecked</span>
+  </label>
+</div><br>
+<h2>Radio Switch</h2>
+<div class="switch">
+  <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+  <label class="switch-paddle" for="exampleRadioSwitch1">
+    <span class="show-for-sr">Bulbasaur</span>
+  </label>
+</div><br>
+<h2>Sizing Classes</h2>
+<div class="switch tiny">
+  <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="tinySwitch">
+    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+  </label>
+</div>
+
+<div class="switch small">
+  <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="smallSwitch">
+    <span class="show-for-sr">Small Portions Only</span>
+  </label>
+</div>
+
+<div class="switch large">
+  <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="largeSwitch">
+    <span class="show-for-sr">Show Large Elephants</span>
+  </label>
+</div><br>
+<h2>Inner Labels</h2>
+<p>Do you like me?</p>
+<div class="switch large">
+  <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="yes-no">
+    <span class="show-for-sr">Do you like me?</span>
+    <span class="switch-active" aria-hidden="true">Yes</span>
+    <span class="switch-inactive" aria-hidden="true">No</span>
+  </label>
+</div><hr><br>
+<!-- Tables Таблицы -->
+<h2>Basics table</h2>
+<table>
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table><hr> <br><br>
+<h2>Hover State</h2>
+<table class="hover">
+  <thead>
+   <tr>
+     <th width="200">Table Header</th>
+     <th>Table Header</th>
+     <th width="150">Table Header</th>
+     <th width="150">Table Header</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+ </tbody>
+</table><hr><br><br>
+<h2>Stripes</h2>
+<table class="unstriped">
+  <thead>
+   <tr>
+     <th width="200">Table Header</th>
+     <th>Table Header</th>
+     <th width="150">Table Header</th>
+     <th width="150">Table Header</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+ </tbody>
+</table><hr><br><br>
+<h2>Staked table</h2>
+<table class="stack">
+  <thead>
+   <tr>
+     <th width="200">Table Header</th>
+     <th>Table Header</th>
+     <th width="150">Table Header</th>
+     <th width="150">Table Header</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+   <tr>
+     <td>Content Goes Here</td>
+     <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+     <td>Content Goes Here</td>
+     <td>Content Goes Here</td>
+   </tr>
+ </tbody>
+</table><hr><br><br>
+<h2>Scrolling table</h2>
+<div class="table-scroll">
+  <table>
+    <thead>
+       <tr>
+         <th width="200">Table Header</th>
+         <th>Table Header</th>
+         <th width="150">Table Header</th>
+         <th width="150">Table Header</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Content Goes Here</td>
+         <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+         <td>Content Goes Here</td>
+         <td>Content Goes Here</td>
+       </tr>
+       <tr>
+         <td>Content Goes Here</td>
+         <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+         <td>Content Goes Here</td>
+         <td>Content Goes Here</td>
+       </tr>
+       <tr>
+         <td>Content Goes Here</td>
+         <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+         <td>Content Goes Here</td>
+         <td>Content Goes Here</td>
+       </tr>
+     </tbody>
+  </table>
+</div><hr><br><br>
+<!-- Top Bar -->
+<h2>Top Bar Basic</h2>
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li>
+        <a href="#">One</a>
+        <ul class="menu vertical">
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>
+<!-- Title Bar-->
+<h2>Title Bar (Advanced Layout)</h2>
+<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="responsive-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li class="has-submenu">
+        <a href="#0">One</a>
+        </li>
+      <li><a href="#0">Two</a>
+      <ul class="submenu menu vertical" data-submenu>
+        <li><a href="#0">1</a></li>
+        <li><a href="#0">2</a></li>
+        <li><a href="#0">3</a></li>
+      </ul>
+    </li>
+      <li><a href="#0">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>
+<h2>Stacking</h2>
+<div class="top-bar stacked-for-medium">
+  <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Site Title</li>
+        <li class="has-submenu">
+          <a href="#0">One</a>
+        </li>
+        <li><a href="#0">Two</a></li>
+        <li><a href="#0">Three</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="#0">One</a></li>
+            <li><a href="#0">Two</a></li>
+            <li><a href="#0">Three</a></li>
+          </ul>
+        </li>
+      </ul>
+</div>
+<h2>Sticky Navigation</h2>
+<div data-sticky-container>
+  <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
+    <div class="title-bar-left"><!-- Content --></div>
+    <div class="title-bar-right"><!-- Content --></div>
+  </div>
+</div><hr>
+<div data-sticky-container>
+  <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+    <div class="title-bar-left">Item</div>
+    <div class="title-bar-right">Item 2</div>
+  </div>
+</div><hr>
+<div class="title-bar">
+<div class="title-bar-left">
+<button class="menu-icon" type="button"></button>
+<span class="title-bar-left">Foundation</span>
+</div>
+<div class="title-bar-right">
+  <button class="menu-icon" type="button"></button>
+</div>
+</div><hr><br><br>
+<!-- Tooltip-->
+<h2>Basic Tooltip</h2>
+The <span data-tooltip tabindex="1" title="Fancy word for a beetle.">scarabaeus</span> hung quite
+clear of any branches, and, if allowed to fall, would have fallen at our feet. <br><br><hr>
+<h2>Basic Tooltip Top</h2>
+The <span data-tooltip class="top" tabindex="2" title="Fancy word for a beetle.">scarabaeus</span>
+hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet.<br><br><hr>
+<h2>Tooltip clicking </h2>
+this
+<span data-tooltip class="top" tabindex="2" title="You see?  I'm open!">
+  tooltip will stay open
+</span>
+while
+<span data-tooltip class="top" data-click-open="false" tabindex="2" title="I don't stay open">
+  this one will only be open when hovered
+</span><br><br><hr>
+<h2>Tooltip Right and Left</h2>
+When he was dressed he went down the hall into the
+<span data-tooltip class="right" tabindex="3" title="Aligned on the right">kitchen</span>.
+The table was almost hidden beneath all Dudley's birthday presents. It looked as though
+<span data-tooltip class="left" tabindex="4" title="Aligned on the left">Dudley</span>
+had gotten the new computer he wanted, not to mention the second television and the racing bike.<br><br><hr>
+<h2>Top and Bottom positioned</h2>
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="bottom" data-alignment="left">
+  Bottom Left
+</button>
+
+<button class="button" type="button"  data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="bottom" data-alignment="center">
+  Bottom Center
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="bottom" data-alignment="right">
+  Bottom Right
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="left">
+  Top Left
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="center">
+  Top Center
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="right">
+  Top Right
+</button><br><hr>
+
+
+
+
+
+
+
+
+    <script src="/home/athlet/Desktop/foundation/Foundation-Sites-CSS/js/vendor/jquery.js"></script>
+    <script src="/home/athlet/Desktop/foundation/Foundation-Sites-CSS/js/vendor/what-input.js"></script>
+    <script src="/home/athlet/Desktop/foundation/Foundation-Sites-CSS/js/vendor/foundation.js"></script>
+    <script src="/home/athlet/Desktop/foundation/Foundation-Sites-CSS/js/app.js"></script>
+  </body>
+</html>
